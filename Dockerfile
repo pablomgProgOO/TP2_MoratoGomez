@@ -36,5 +36,5 @@ RUN chown -R www-data:www-data /var/www \
 # Générer clé d'app (en runtime)
 CMD php artisan config:cache && \
     php artisan migrate --force && \
-    php artisan serve --host=0.0.0.0 --port=8080
+    php artisan serve --host=0.0.0.0 --port=8080\
     touch /var/www/database/database.sqlite
