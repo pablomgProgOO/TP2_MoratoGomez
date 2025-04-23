@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: tp2-api
+    env: docker
+    plan: free
+    autoDeploy: true
